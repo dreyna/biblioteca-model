@@ -25,9 +25,9 @@ public class Categoria {
     @NotNull
     @NotBlank
     private String nombre;
-    @Column(name = "ESTADO")
-    @NotBlank
-    private char estado;
+    @Column(name = "ESTADO", nullable = false, length = 1)
+    @NotNull(message = "El estado es obligatorio")
+    private Character estado;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "categoria")
     @JsonIgnore

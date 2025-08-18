@@ -24,8 +24,7 @@ public class Seccion {
     @NotBlank
     private String nombre;
     @Column(name = "ESTADO")
-    @NotBlank
-    private char estado;
+    private Character estado;
 
     @ManyToOne
     @JoinColumn(name="CATEGORIA_ID", nullable = false)

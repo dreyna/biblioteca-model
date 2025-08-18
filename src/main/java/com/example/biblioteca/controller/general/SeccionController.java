@@ -3,7 +3,8 @@ package com.example.biblioteca.controller.general;
 import com.example.biblioteca.controller.error.BusinessException;
 import com.example.biblioteca.controller.error.ResourceNotFoundException;
 import com.example.biblioteca.dto.CategoriaDTO;
-import com.example.biblioteca.service.general.service.CategoriaService;
+import com.example.biblioteca.dto.SeccionDTO;
+import com.example.biblioteca.service.general.service.SeccionService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -18,14 +19,13 @@ import static java.util.Objects.isNull;
 @RequiredArgsConstructor
 @RestController
 @Slf4j
-@RequestMapping("api/v1/categorias")
-public class CategoriaController {
-    private final CategoriaService categoriaService;
-
+@RequestMapping("api/v1/secciones")
+public class SeccionController {
+    private final SeccionService seccionService;
     @GetMapping
     public ResponseEntity<?> getAll() {
         try {
-            List<CategoriaDTO> cats =  categoriaService.findAll();
+            List<SeccionDTO> cats =  seccionService.findAll();
             if (isNull(cats) || cats.isEmpty()) {
                 return ResponseEntity.noContent().build();
             }
@@ -38,41 +38,41 @@ public class CategoriaController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<CategoriaDTO> obtenerPorId(@PathVariable Long id) {
-        CategoriaDTO categoria = categoriaService.findById(id)
+    public ResponseEntity<SeccionDTO> obtenerPorId(@PathVariable Long id) {
+        SeccionDTO categoria = seccionService.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Categoría con id " + id + " no existe"));
         return ResponseEntity.ok(categoria);
     }
 
     @PostMapping
-    public ResponseEntity<CategoriaDTO> crear(@Valid @RequestBody CategoriaDTO dto) {
+    public ResponseEntity<SeccionDTO> crear(@Valid @RequestBody SeccionDTO dto) {
         if (dto.getId() != null) {
             throw new BusinessException("No se permite crear con ID predefinido");
         }
-        CategoriaDTO nueva = categoriaService.save(dto);
+        SeccionDTO nueva = seccionService.save(dto);
         return ResponseEntity.status(HttpStatus.CREATED).body(nueva);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<CategoriaDTO> actualizar(@PathVariable Long id, @Valid @RequestBody CategoriaDTO dto) {
-        CategoriaDTO actual = categoriaService.findById(id)
+    public ResponseEntity<SeccionDTO> actualizar(@PathVariable Long id, @Valid @RequestBody SeccionDTO dto) {
+        SeccionDTO actual = seccionService.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("No se encontró la categoría con id " + id));
 
         dto.setId(id);
-        CategoriaDTO actualizado = categoriaService.update(dto);
+        SeccionDTO actualizado = seccionService.update(dto);
         return ResponseEntity.ok(actualizado);
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<String> eliminar(@PathVariable Long id) {
-        CategoriaDTO categoria = categoriaService.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("No existe categoría con id " + id));
+        SeccionDTO seccion = seccionService.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("No existe sección con id " + id));
 
-        if ("I".equals(categoria.getEstado())) {
-            throw new BusinessException("La categoría ya está inactiva");
+        if ("I".equals(seccion.getEstado())) {
+            throw new BusinessException("La sección ya está inactiva");
         }
 
-        categoriaService.deleteLogic(id);
-        return ResponseEntity.ok("Categoría desactivada correctamente");
+        seccionService.deleteLogic(id);
+        return ResponseEntity.ok("Sección desactivada correctamente");
     }
 }

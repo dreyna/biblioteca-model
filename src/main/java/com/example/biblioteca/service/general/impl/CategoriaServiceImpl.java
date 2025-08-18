@@ -43,12 +43,12 @@ public class CategoriaServiceImpl implements CategoriaService {
 
     @Override
     public CategoriaDTO update(CategoriaDTO categoriaDTO) throws ServiceException {
-        Optional<Categoria> categoria = categoriaRepository.findById(categoriaDTO.id());
+        Optional<Categoria> categoria = categoriaRepository.findById(categoriaDTO.getId());
         if (categoria.isPresent()) {
             Categoria cat = new Categoria();
-            cat.setNombre(categoriaDTO.nombre());
-            cat.setEstado(categoriaDTO.estado());
-            cat.setId(categoriaDTO.id());
+            cat.setNombre(categoriaDTO.getNombre());
+            cat.setEstado(categoriaDTO.getEstado().charAt(0));
+            cat.setId(categoriaDTO.getId());
             return categoriaMapper.toDto(categoriaRepository.save(cat));
         }
         return null;
