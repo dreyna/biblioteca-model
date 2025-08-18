@@ -8,7 +8,9 @@ import com.example.biblioteca.mapper.SeccionMapper;
 import com.example.biblioteca.repository.CategoriaRepository;
 import com.example.biblioteca.repository.SeccionRepository;
 import com.example.biblioteca.service.general.service.SeccionService;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.hibernate.service.spi.ServiceException;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +19,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
+@Slf4j
 @Service
 public class SeccionServiceImpl implements SeccionService {
     private final SeccionRepository seccionRepository;
@@ -48,6 +51,7 @@ public class SeccionServiceImpl implements SeccionService {
     }
 
     @Override
+    @Transactional
     public SeccionDTO update(SeccionDTO seccionDTO) throws ServiceException {
         Optional<Seccion> seccion1 = seccionRepository.findById(seccionDTO.getId());
         Seccion seccion = seccionRepository.findById(seccionDTO.getId())
@@ -58,6 +62,7 @@ public class SeccionServiceImpl implements SeccionService {
         seccion.setEstado(seccionDTO.getEstado().charAt(0));
         seccion.setCategoria(categoria);
         Seccion actualizada = seccionRepository.save(seccion);
+        log.info("action=update entity=Seccion id={} outcome=OK", actualizada.getId());
         return seccionMapper.toDto(actualizada);
     }
 
