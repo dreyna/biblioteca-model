@@ -33,7 +33,14 @@ public class SeccionServiceImpl implements SeccionService {
 
     @Override
     public Optional<SeccionDTO> findById(long id) throws ServiceException {
-        return seccionRepository.findById(id).map(l->seccionMapper.toDto(l));
+        try {
+            log.info("Encontrado: "+id );
+            return seccionRepository.findById(id).map(l->seccionMapper.toDto(l));
+        } catch (Exception e) {
+            log.error(id+" No Encontrado: ");
+            throw new RuntimeException(e);
+        }
+
     }
 
     @Override

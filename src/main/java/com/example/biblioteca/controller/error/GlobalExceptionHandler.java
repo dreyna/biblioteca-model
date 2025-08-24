@@ -1,5 +1,6 @@
 package com.example.biblioteca.controller.error;
 
+import com.example.biblioteca.service.exception.ProblemBuilder;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.ConstraintViolationException;
 import org.hibernate.service.spi.ServiceException;
@@ -23,45 +24,63 @@ import java.util.Map;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
-    private ProblemDetail problem(HttpStatusCode status, String title, String detail, HttpServletRequest req) {
-        ProblemDetail pd = ProblemDetail.forStatusAndDetail(status, detail);
-        pd.setTitle(title);
-        pd.setType(URI.create("about:blank"));
-        pd.setInstance(URI.create(req.getRequestURI()));
-        pd.setProperty("timestamp", OffsetDateTime.now().toString());
-        pd.setProperty("path", req.getRequestURI());
-        return pd;
+
+    private ProblemDetail problem(HttpStatus status, String title, String detail, HttpServletRequest req) {
+        return ProblemBuilder.buil(status, title, detail, req);
     }
     // 404: recurso de negocio no encontrado
     @ExceptionHandler(ResourceNotFoundException.class)
-    public ResponseEntity<ProblemDetail> handleNotFound(ConfigDataResourceNotFoundException ex, HttpServletRequest req) {
-        return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                .body(problem(HttpStatus.NOT_FOUND, "Recurso no encontrado", ex.getMessage(), req));
+    public ResponseEntity<ProblemDetail> handleNotFound(ResourceNotFoundException ex, HttpServletRequest req) {
+        ProblemDetail pd = ProblemBuilder.buil(
+                HttpStatus.NOT_FOUND,
+                "Recurso no encontrado",
+                ex.getMessage(),
+                req
+        );
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(pd);
     }
 
     // 404: no existe endpoint (ruta equivocada)
     @ExceptionHandler(NoHandlerFoundException.class)
     public ResponseEntity<ProblemDetail> handleNoHandler(NoHandlerFoundException ex, HttpServletRequest req) {
-        return ResponseEntity.status(HttpStatus.NOT_FOUND)
-                .body(problem(HttpStatus.NOT_FOUND, "Endpoint no encontrado", "La ruta solicitada no existe.", req));
+        String detail = "La ruta solicitada no existe: " + ex.getRequestURL();
+        ProblemDetail pd = problem(HttpStatus.NOT_FOUND, "Endpoint no encontrado", detail, req);
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(pd);
     }
 
     // 400: cuerpo JSON inválido
     @ExceptionHandler(HttpMessageNotReadableException.class)
     public ResponseEntity<ProblemDetail> handleUnreadable(HttpMessageNotReadableException ex, HttpServletRequest req) {
         return ResponseEntity.badRequest()
-                .body(problem(HttpStatus.BAD_REQUEST, "Solicitud inválida", "El cuerpo de la solicitud es inválido o malformado.", req));
+                .body(problem(
+                        HttpStatus.BAD_REQUEST,
+                        "Solicitud inválida",
+                        "El cuerpo de la solicitud está malformado o contiene errores de formato.",
+                        req
+                ));
     }
 
     // 400: validaciones @Valid fallidas
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<ProblemDetail> handleValidation(MethodArgumentNotValidException ex, HttpServletRequest req) {
-        ProblemDetail pd = problem(HttpStatus.BAD_REQUEST, "Datos inválidos", "Se encontraron errores de validación.", req);
+        ProblemDetail pd = problem(
+                HttpStatus.BAD_REQUEST,
+                "Datos inválidos",
+                "Se encontraron errores de validación en uno o más campos.",
+                req
+        );
+
+        // Agrupar mensajes por campo
         Map<String, List<String>> errors = new LinkedHashMap<>();
         for (FieldError fe : ex.getBindingResult().getFieldErrors()) {
-            errors.computeIfAbsent(fe.getField(), k -> new ArrayList<>()).add(fe.getDefaultMessage());
+            errors
+                    .computeIfAbsent(fe.getField(), k -> new ArrayList<>())
+                    .add(fe.getDefaultMessage());
         }
+
+        // Añadir detalle al problema
         pd.setProperty("errors", errors);
+
         return ResponseEntity.badRequest().body(pd);
     }
 
