@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-public class GenericError {
+public class GenericError1 {
     protected ResponseEntity<List<Map<String, String>>> getError(BindingResult result) {
         List<Map<String, String>> errors = result.getFieldErrors()
                 .stream().map(e -> {

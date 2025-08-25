@@ -23,10 +23,9 @@ public class Categoria {
     @Column(name = "ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id=0L;
-    @Column(name = "NOMBRE", unique = true,  nullable = false,  length = 50)
+    @Column(name = "NOMBRE", unique = true,  nullable = false,  length = 20)
     @NotBlank(message = "No debe ser blanco")
     @Size(min = 5, max = 20)
-    @Pattern(regexp = "")
     private String nombre;
     @Column(name = "ESTADO", nullable = false, length = 1)
     @NotNull(message = "El estado es obligatorio")
