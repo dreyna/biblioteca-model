@@ -1,73 +1,73 @@
-2025-08-27T14:36:51.401-05:00  INFO 17028 --- [biblioteca] [main] c.e.biblioteca.BibliotecaApplication     : Starting BibliotecaApplication using Java 21.0.6 with PID 17028 (C:\Users\docente.fia\Documents\biblioteca-model\target\classes started by docente.fia in C:\Users\docente.fia\Documents\biblioteca-model)
-2025-08-27T14:36:51.407-05:00  INFO 17028 --- [biblioteca] [main] c.e.biblioteca.BibliotecaApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-08-27T14:36:52.243-05:00  INFO 17028 --- [biblioteca] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-08-27T14:36:52.400-05:00  INFO 17028 --- [biblioteca] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 147 ms. Found 12 JPA repository interfaces.
-2025-08-27T14:36:52.979-05:00  INFO 17028 --- [biblioteca] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2025-08-27T14:36:53.000-05:00  INFO 17028 --- [biblioteca] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-08-27T14:36:53.000-05:00  INFO 17028 --- [biblioteca] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-27T14:36:53.068-05:00  INFO 17028 --- [biblioteca] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-08-27T14:36:53.068-05:00  INFO 17028 --- [biblioteca] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1594 ms
-2025-08-27T14:36:53.167-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : Class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@76ed5528
-2025-08-27T14:36:53.341-05:00  INFO 17028 --- [biblioteca] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-08-27T14:36:53.416-05:00  INFO 17028 --- [biblioteca] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
-2025-08-27T14:36:53.463-05:00  INFO 17028 --- [biblioteca] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-08-27T14:36:53.834-05:00  INFO 17028 --- [biblioteca] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-08-27T14:36:53.868-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - configuration:
-2025-08-27T14:36:53.870-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
-2025-08-27T14:36:53.870-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
-2025-08-27T14:36:53.870-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : catalog.........................none
-2025-08-27T14:36:53.870-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............none
-2025-08-27T14:36:53.871-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............none
-2025-08-27T14:36:53.871-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............30000
-2025-08-27T14:36:53.871-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : credentials.....................com.zaxxer.hikari.util.Credentials@211a9647
-2025-08-27T14:36:53.871-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : dataSource......................none
-2025-08-27T14:36:53.871-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............none
-2025-08-27T14:36:53.871-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................none
-2025-08-27T14:36:53.872-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
-2025-08-27T14:36:53.872-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : driverClassName................."oracle.jdbc.OracleDriver"
-2025-08-27T14:36:53.872-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : exceptionOverride...............none
-2025-08-27T14:36:53.872-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName......none
-2025-08-27T14:36:53.873-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
-2025-08-27T14:36:53.873-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............none
-2025-08-27T14:36:53.873-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
-2025-08-27T14:36:53.873-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout.......1
-2025-08-27T14:36:53.873-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
-2025-08-27T14:36:53.874-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : jdbcUrl.........................jdbc:oracle:thin:@localhost:1521/XEPDB1
-2025-08-27T14:36:53.874-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : keepaliveTime...................120000
-2025-08-27T14:36:53.874-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
-2025-08-27T14:36:53.874-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
-2025-08-27T14:36:53.875-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................10
-2025-08-27T14:36:53.875-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : metricRegistry..................none
-2025-08-27T14:36:53.875-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........none
-2025-08-27T14:36:53.875-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................10
-2025-08-27T14:36:53.875-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : password........................<masked>
-2025-08-27T14:36:53.876-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : poolName........................"HikariPool-1"
-2025-08-27T14:36:53.876-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : readOnly........................false
-2025-08-27T14:36:53.876-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
-2025-08-27T14:36:53.876-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : scheduledExecutor...............none
-2025-08-27T14:36:53.877-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : schema..........................none
-2025-08-27T14:36:53.877-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : threadFactory...................internal
-2025-08-27T14:36:53.877-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : transactionIsolation............default
-2025-08-27T14:36:53.877-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : username........................"USERLP2"
-2025-08-27T14:36:53.877-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : validationTimeout...............5000
-2025-08-27T14:36:53.878-05:00  INFO 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-08-27T14:36:53.886-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (d67a3136-d3f2-4711-adcd-b7cc07b06f3c)
-2025-08-27T14:36:54.526-05:00 DEBUG 17028 --- [biblioteca] [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (d67a3136-d3f2-4711-adcd-b7cc07b06f3c)
-2025-08-27T14:36:54.527-05:00  INFO 17028 --- [biblioteca] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4b3ad7ca
-2025-08-27T14:36:54.530-05:00  INFO 17028 --- [biblioteca] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-08-27T14:36:54.639-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=1/10, idle=0/10, active=1, waiting=0)
-2025-08-27T14:36:54.640-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (3f92766a-72db-4d3d-9170-c7466fee4a6d)
-2025-08-27T14:36:54.706-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (3f92766a-72db-4d3d-9170-c7466fee4a6d)
-2025-08-27T14:36:54.706-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@23f4c519
-2025-08-27T14:36:54.750-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=2/10, idle=1/10, active=1, waiting=0)
-2025-08-27T14:36:54.751-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (fb009317-d794-4395-858d-c73291cadfe8)
-2025-08-27T14:36:54.810-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (fb009317-d794-4395-858d-c73291cadfe8)
-2025-08-27T14:36:54.811-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4483f9da
-2025-08-27T14:36:54.844-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=3/10, idle=2/10, active=1, waiting=0)
-2025-08-27T14:36:54.844-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (f4462de2-2ccd-4dfd-b549-1f9d1fa7abd0)
-2025-08-27T14:36:54.903-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (f4462de2-2ccd-4dfd-b549-1f9d1fa7abd0)
-2025-08-27T14:36:54.903-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@3b565249
-2025-08-27T14:36:54.908-05:00  INFO 17028 --- [biblioteca] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-09-03T14:14:26.987-05:00  INFO 8148 --- [biblioteca] [main] c.e.biblioteca.BibliotecaApplication     : Starting BibliotecaApplication using Java 21.0.6 with PID 8148 (C:\Users\docente.fia\Documents\biblioteca-model\target\classes started by docente.fia in C:\Users\docente.fia\Documents\biblioteca-model)
+2025-09-03T14:14:26.997-05:00  INFO 8148 --- [biblioteca] [main] c.e.biblioteca.BibliotecaApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-09-03T14:14:27.948-05:00  INFO 8148 --- [biblioteca] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-03T14:14:28.057-05:00  INFO 8148 --- [biblioteca] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 12 JPA repository interfaces.
+2025-09-03T14:14:28.672-05:00  INFO 8148 --- [biblioteca] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2025-09-03T14:14:28.687-05:00  INFO 8148 --- [biblioteca] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-03T14:14:28.688-05:00  INFO 8148 --- [biblioteca] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-09-03T14:14:28.747-05:00  INFO 8148 --- [biblioteca] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-03T14:14:28.747-05:00  INFO 8148 --- [biblioteca] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1667 ms
+2025-09-03T14:14:28.832-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : Class oracle.jdbc.OracleDriver found in Thread context class loader jdk.internal.loader.ClassLoaders$AppClassLoader@76ed5528
+2025-09-03T14:14:29.027-05:00  INFO 8148 --- [biblioteca] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-03T14:14:29.101-05:00  INFO 8148 --- [biblioteca] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-09-03T14:14:29.158-05:00  INFO 8148 --- [biblioteca] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-03T14:14:29.577-05:00  INFO 8148 --- [biblioteca] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-03T14:14:29.620-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - configuration:
+2025-09-03T14:14:29.622-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : allowPoolSuspension.............false
+2025-09-03T14:14:29.622-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : autoCommit......................true
+2025-09-03T14:14:29.622-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : catalog.........................none
+2025-09-03T14:14:29.622-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : connectionInitSql...............none
+2025-09-03T14:14:29.623-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : connectionTestQuery.............none
+2025-09-03T14:14:29.623-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : connectionTimeout...............30000
+2025-09-03T14:14:29.623-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : credentials.....................com.zaxxer.hikari.util.Credentials@c732e1c
+2025-09-03T14:14:29.623-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : dataSource......................none
+2025-09-03T14:14:29.624-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : dataSourceClassName.............none
+2025-09-03T14:14:29.624-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : dataSourceJNDI..................none
+2025-09-03T14:14:29.624-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : dataSourceProperties............{password=<masked>}
+2025-09-03T14:14:29.625-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : driverClassName................."oracle.jdbc.OracleDriver"
+2025-09-03T14:14:29.625-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : exceptionOverride...............none
+2025-09-03T14:14:29.625-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : exceptionOverrideClassName......none
+2025-09-03T14:14:29.625-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : healthCheckProperties...........{}
+2025-09-03T14:14:29.626-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : healthCheckRegistry.............none
+2025-09-03T14:14:29.626-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : idleTimeout.....................600000
+2025-09-03T14:14:29.626-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : initializationFailTimeout.......1
+2025-09-03T14:14:29.626-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : isolateInternalQueries..........false
+2025-09-03T14:14:29.627-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : jdbcUrl.........................jdbc:oracle:thin:@localhost:1521/XEPDB1
+2025-09-03T14:14:29.627-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : keepaliveTime...................120000
+2025-09-03T14:14:29.627-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : leakDetectionThreshold..........0
+2025-09-03T14:14:29.627-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : maxLifetime.....................1800000
+2025-09-03T14:14:29.628-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : maximumPoolSize.................10
+2025-09-03T14:14:29.628-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : metricRegistry..................none
+2025-09-03T14:14:29.628-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : metricsTrackerFactory...........none
+2025-09-03T14:14:29.628-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : minimumIdle.....................10
+2025-09-03T14:14:29.629-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : password........................<masked>
+2025-09-03T14:14:29.629-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : poolName........................"HikariPool-1"
+2025-09-03T14:14:29.629-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : readOnly........................false
+2025-09-03T14:14:29.629-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : registerMbeans..................false
+2025-09-03T14:14:29.630-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : scheduledExecutor...............none
+2025-09-03T14:14:29.630-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : schema..........................none
+2025-09-03T14:14:29.630-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : threadFactory...................internal
+2025-09-03T14:14:29.630-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : transactionIsolation............default
+2025-09-03T14:14:29.631-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : username........................"USERLP2"
+2025-09-03T14:14:29.631-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariConfig           : validationTimeout...............5000
+2025-09-03T14:14:29.631-05:00  INFO 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-03T14:14:29.639-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (6a527280-2d85-48fd-9f94-691a32c3205f)
+2025-09-03T14:14:30.160-05:00 DEBUG 8148 --- [biblioteca] [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (6a527280-2d85-48fd-9f94-691a32c3205f)
+2025-09-03T14:14:30.162-05:00  INFO 8148 --- [biblioteca] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@4751cd3
+2025-09-03T14:14:30.164-05:00  INFO 8148 --- [biblioteca] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-03T14:14:30.265-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=1/10, idle=0/10, active=1, waiting=0)
+2025-09-03T14:14:30.265-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (990b9aa8-b17f-47c5-a88a-356b0d2e6e07)
+2025-09-03T14:14:30.321-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (990b9aa8-b17f-47c5-a88a-356b0d2e6e07)
+2025-09-03T14:14:30.321-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@38f8b5a8
+2025-09-03T14:14:30.352-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=2/10, idle=1/10, active=1, waiting=0)
+2025-09-03T14:14:30.352-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (8a363688-140e-468c-b489-15e533917b8d)
+2025-09-03T14:14:30.430-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (8a363688-140e-468c-b489-15e533917b8d)
+2025-09-03T14:14:30.431-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6ab6f0a2
+2025-09-03T14:14:30.462-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=3/10, idle=2/10, active=1, waiting=0)
+2025-09-03T14:14:30.462-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (8e84e3c8-add3-4245-893f-858a7d292980)
+2025-09-03T14:14:30.527-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (8e84e3c8-add3-4245-893f-858a7d292980)
+2025-09-03T14:14:30.527-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6e492e16
+2025-09-03T14:14:30.535-05:00  INFO 8148 --- [biblioteca] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 21.3
@@ -75,169 +75,61 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-08-27T14:36:54.937-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=4/10, idle=4/10, active=0, waiting=0)
-2025-08-27T14:36:54.937-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (257b289c-c819-49c3-b399-367a46592fce)
-2025-08-27T14:36:55.004-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (257b289c-c819-49c3-b399-367a46592fce)
-2025-08-27T14:36:55.004-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@33153d0a
-2025-08-27T14:36:55.047-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=5/10, idle=5/10, active=0, waiting=0)
-2025-08-27T14:36:55.047-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (23f9d59b-d34b-42e2-97bf-f7c659e6865b)
-2025-08-27T14:36:55.105-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (23f9d59b-d34b-42e2-97bf-f7c659e6865b)
-2025-08-27T14:36:55.105-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@18ee7117
-2025-08-27T14:36:55.136-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=6/10, idle=6/10, active=0, waiting=0)
-2025-08-27T14:36:55.136-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (9731b101-461f-4a78-b33a-700bce69df09)
-2025-08-27T14:36:55.204-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (9731b101-461f-4a78-b33a-700bce69df09)
-2025-08-27T14:36:55.204-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@653580
-2025-08-27T14:36:55.236-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=7/10, idle=7/10, active=0, waiting=0)
-2025-08-27T14:36:55.236-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (2b40a5a2-8be6-46e3-9431-48129b08a638)
-2025-08-27T14:36:55.298-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (2b40a5a2-8be6-46e3-9431-48129b08a638)
-2025-08-27T14:36:55.298-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5994a893
-2025-08-27T14:36:55.330-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=8/10, idle=8/10, active=0, waiting=0)
-2025-08-27T14:36:55.330-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (fcf6ae5d-839a-47f3-98d7-cba10be06889)
-2025-08-27T14:36:55.396-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (fcf6ae5d-839a-47f3-98d7-cba10be06889)
-2025-08-27T14:36:55.396-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5dca8b1d
-2025-08-27T14:36:55.427-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=9/10, idle=9/10, active=0, waiting=0)
-2025-08-27T14:36:55.427-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (d722c880-1393-424c-b426-f6c71b953fc7)
-2025-08-27T14:36:55.514-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (d722c880-1393-424c-b426-f6c71b953fc7)
-2025-08-27T14:36:55.515-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5bb6b644
-2025-08-27T14:36:55.546-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:36:55.546-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Connection not added, stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:36:56.363-05:00  INFO 17028 --- [biblioteca] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-08-27T14:36:57.525-05:00  INFO 17028 --- [biblioteca] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-08-27T14:36:58.005-05:00  WARN 17028 --- [biblioteca] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-08-27T14:36:58.110-05:00 DEBUG 17028 --- [biblioteca] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
-2025-08-27T14:36:58.184-05:00 DEBUG 17028 --- [biblioteca] [main] o.s.w.s.c.annotation.WebMvcConfigurer    : Default resource handling disabled
-2025-08-27T14:36:58.209-05:00 DEBUG 17028 --- [biblioteca] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-08-27T14:36:58.267-05:00 DEBUG 17028 --- [biblioteca] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-08-27T14:36:58.506-05:00  INFO 17028 --- [biblioteca] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
-2025-08-27T14:36:58.515-05:00  INFO 17028 --- [biblioteca] [main] c.e.biblioteca.BibliotecaApplication     : Started BibliotecaApplication in 7.765 seconds (process running for 8.63)
-2025-08-27T14:37:02.260-05:00  INFO 17028 --- [biblioteca] [http-nio-9090-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-08-27T14:37:02.260-05:00  INFO 17028 --- [biblioteca] [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-08-27T14:37:02.260-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-08-27T14:37:02.261-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-08-27T14:37:02.261-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-08-27T14:37:02.262-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7320bccc
-2025-08-27T14:37:02.263-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7a7f5c44
-2025-08-27T14:37:02.263-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-08-27T14:37:02.263-05:00  INFO 17028 --- [biblioteca] [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2025-08-27T14:37:02.272-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/categorias", parameters={}
-2025-08-27T14:37:02.285-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.biblioteca.controller.general.CategoriaController#getAll()
-2025-08-27T14:37:02.418-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-3] org.hibernate.SQL                        : 
+2025-09-03T14:14:30.560-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=4/10, idle=4/10, active=0, waiting=0)
+2025-09-03T14:14:30.560-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (ea36fc14-1bca-4e38-a192-bc85255ff0a0)
+2025-09-03T14:14:30.631-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (ea36fc14-1bca-4e38-a192-bc85255ff0a0)
+2025-09-03T14:14:30.632-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@ba8b2df
+2025-09-03T14:14:30.663-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=5/10, idle=5/10, active=0, waiting=0)
+2025-09-03T14:14:30.663-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (a9c6f713-2fcf-4d60-8050-5d28f72aea2a)
+2025-09-03T14:14:30.733-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (a9c6f713-2fcf-4d60-8050-5d28f72aea2a)
+2025-09-03T14:14:30.733-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@27e3a9d3
+2025-09-03T14:14:30.764-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=6/10, idle=6/10, active=0, waiting=0)
+2025-09-03T14:14:30.764-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (e78867fc-db48-4a23-a219-e29157e15cb2)
+2025-09-03T14:14:30.841-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (e78867fc-db48-4a23-a219-e29157e15cb2)
+2025-09-03T14:14:30.841-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@6954becc
+2025-09-03T14:14:30.872-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=7/10, idle=7/10, active=0, waiting=0)
+2025-09-03T14:14:30.872-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (2b209b4e-7c55-400c-a173-29d4e574bbf2)
+2025-09-03T14:14:30.945-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (2b209b4e-7c55-400c-a173-29d4e574bbf2)
+2025-09-03T14:14:30.946-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@5697da04
+2025-09-03T14:14:30.977-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=8/10, idle=8/10, active=0, waiting=0)
+2025-09-03T14:14:30.977-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (6976675c-2816-4f8d-b813-8ec96525b2cc)
+2025-09-03T14:14:31.045-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (6976675c-2816-4f8d-b813-8ec96525b2cc)
+2025-09-03T14:14:31.045-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@52a23e44
+2025-09-03T14:14:31.076-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=9/10, idle=9/10, active=0, waiting=0)
+2025-09-03T14:14:31.076-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (818aba39-d5cc-4ccd-8ae0-390aaaa59985)
+2025-09-03T14:14:31.161-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (818aba39-d5cc-4ccd-8ae0-390aaaa59985)
+2025-09-03T14:14:31.161-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2727ec27
+2025-09-03T14:14:31.192-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After adding stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:14:31.192-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Connection not added, stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:14:32.075-05:00  INFO 8148 --- [biblioteca] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-03T14:14:33.089-05:00  INFO 8148 --- [biblioteca] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03T14:14:33.581-05:00  WARN 8148 --- [biblioteca] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-03T14:14:33.683-05:00 DEBUG 8148 --- [biblioteca] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 12 mappings in 'requestMappingHandlerMapping'
+2025-09-03T14:14:33.745-05:00 DEBUG 8148 --- [biblioteca] [main] o.s.w.s.c.annotation.WebMvcConfigurer    : Default resource handling disabled
+2025-09-03T14:14:33.789-05:00 DEBUG 8148 --- [biblioteca] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-09-03T14:14:33.848-05:00 DEBUG 8148 --- [biblioteca] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-09-03T14:14:34.075-05:00  INFO 8148 --- [biblioteca] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2025-09-03T14:14:34.084-05:00  INFO 8148 --- [biblioteca] [main] c.e.biblioteca.BibliotecaApplication     : Started BibliotecaApplication in 7.864 seconds (process running for 8.789)
+2025-09-03T14:14:37.799-05:00  INFO 8148 --- [biblioteca] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-03T14:14:37.800-05:00  INFO 8148 --- [biblioteca] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-03T14:14:37.800-05:00 DEBUG 8148 --- [biblioteca] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-09-03T14:14:37.800-05:00 DEBUG 8148 --- [biblioteca] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-09-03T14:14:37.800-05:00 DEBUG 8148 --- [biblioteca] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-09-03T14:14:37.801-05:00 DEBUG 8148 --- [biblioteca] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@51751265
+2025-09-03T14:14:37.801-05:00 DEBUG 8148 --- [biblioteca] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@155cf9f6
+2025-09-03T14:14:37.801-05:00 DEBUG 8148 --- [biblioteca] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-09-03T14:14:37.801-05:00  INFO 8148 --- [biblioteca] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-03T14:14:37.810-05:00 DEBUG 8148 --- [biblioteca] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/secciones", parameters={}
+2025-09-03T14:14:37.823-05:00 DEBUG 8148 --- [biblioteca] [http-nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.biblioteca.controller.general.SeccionController#getAll()
+2025-09-03T14:14:37.980-05:00 DEBUG 8148 --- [biblioteca] [http-nio-9090-exec-1] org.hibernate.SQL                        : 
     select
-        c1_0.id,
-        c1_0.estado,
-        c1_0.nombre 
+        s1_0.id,
+        s1_0.categoria_id,
+        s1_0.estado,
+        s1_0.nombre 
     from
-        USERLP2.tbl_categorias c1_0
-2025-08-27T14:37:02.500-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-27T14:37:02.502-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[CategoriaDTO(id=1, nombre=FICCIÓN, estado=A), CategoriaDTO(id=2, nombre=NO FICCIÓN, estado=A), Cate (truncated)...]
-2025-08-27T14:37:02.565-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2025-08-27T14:37:19.407-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/categoria", parameters={}
-2025-08-27T14:37:19.409-05:00  WARN 17028 --- [biblioteca] [http-nio-9090-exec-2] o.s.web.servlet.PageNotFound             : No mapping for GET /api/v1/categoria
-2025-08-27T14:37:19.413-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.biblioteca.controller.error.GlobalExceptionHandler#handleNoHandler(NoHandlerFoundException)
-2025-08-27T14:37:19.418-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-27T14:37:19.420-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiResponse(timestamp=2025-08-27T14:37:19.415331100, status=404, message=La ruta solicitada no exist (truncated)...]
-2025-08-27T14:37:19.425-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /api/v1/categoria.]
-2025-08-27T14:37:19.426-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2025-08-27T14:37:24.646-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:37:24.646-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:37:54.655-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:37:54.656-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:38:24.661-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:38:24.662-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:38:36.179-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5bb6b644 is alive
-2025-08-27T14:38:38.843-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@653580 is alive
-2025-08-27T14:38:42.196-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5994a893 is alive
-2025-08-27T14:38:43.339-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@18ee7117 is alive
-2025-08-27T14:38:48.322-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4b3ad7ca is alive
-2025-08-27T14:38:49.119-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@23f4c519 is alive
-2025-08-27T14:38:50.617-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5dca8b1d is alive
-2025-08-27T14:38:51.303-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@33153d0a is alive
-2025-08-27T14:38:51.382-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4483f9da is alive
-2025-08-27T14:38:53.130-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@3b565249 is alive
-2025-08-27T14:38:54.667-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:38:54.668-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:39:24.684-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:39:24.684-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:39:54.695-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:39:54.695-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:40:16.844-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5bb6b644 is alive
-2025-08-27T14:40:22.493-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@653580 is alive
-2025-08-27T14:40:24.700-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:40:24.700-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:40:29.091-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5994a893 is alive
-2025-08-27T14:40:31.564-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@18ee7117 is alive
-2025-08-27T14:40:42.120-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4b3ad7ca is alive
-2025-08-27T14:40:43.539-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@23f4c519 is alive
-2025-08-27T14:40:45.836-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5dca8b1d is alive
-2025-08-27T14:40:47.589-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@33153d0a is alive
-2025-08-27T14:40:47.949-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4483f9da is alive
-2025-08-27T14:40:51.364-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@3b565249 is alive
-2025-08-27T14:40:54.705-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:40:54.705-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:41:24.713-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:41:24.713-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:41:54.723-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:41:54.723-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:41:57.513-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5bb6b644 is alive
-2025-08-27T14:42:06.139-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@653580 is alive
-2025-08-27T14:42:15.985-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5994a893 is alive
-2025-08-27T14:42:19.793-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@18ee7117 is alive
-2025-08-27T14:42:24.735-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:42:24.735-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:42:35.927-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4b3ad7ca is alive
-2025-08-27T14:42:37.961-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@23f4c519 is alive
-2025-08-27T14:42:41.052-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5dca8b1d is alive
-2025-08-27T14:42:43.873-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@33153d0a is alive
-2025-08-27T14:42:44.528-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4483f9da is alive
-2025-08-27T14:42:49.600-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@3b565249 is alive
-2025-08-27T14:42:54.750-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:42:54.750-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:43:24.763-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:43:24.763-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:43:38.167-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5bb6b644 is alive
-2025-08-27T14:43:49.783-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@653580 is alive
-2025-08-27T14:43:53.489-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/categorias", parameters={}
-2025-08-27T14:43:53.490-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.biblioteca.controller.general.CategoriaController#crear(CategoriaDTO)
-2025-08-27T14:43:53.540-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CategoriaDTO(id=null, nombre=, estado=A)]
-2025-08-27T14:43:53.592-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.biblioteca.controller.error.GlobalExceptionHandler#handleValidation(MethodArgumentNotValidException)
-2025-08-27T14:43:53.593-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-27T14:43:53.594-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiResponse(timestamp=2025-08-27T14:43:53.593645, status=400, message=Error de validación, data={nom (truncated)...]
-2025-08-27T14:43:53.595-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.biblioteca.dto.CategoriaDTO> com.example.biblioteca.controller.general.CategoriaController.crear(com.example.biblioteca.dto.CategoriaDTO): [Field error in object 'categoriaDTO' on field 'nombre': rejected value []; codes [NotBlank.categoriaDTO.nombre,NotBlank.nombre,NotBlank.java.lang.String,NotBlank]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [categoriaDTO.nombre,nombre]; arguments []; default message [nombre]]; default message [EL nombre de la categoria es obligatorio.]] ]
-2025-08-27T14:43:53.596-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2025-08-27T14:43:54.766-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:43:54.767-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:44:02.878-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5994a893 is alive
-2025-08-27T14:44:08.019-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@18ee7117 is alive
-2025-08-27T14:44:24.778-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:44:24.778-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:44:29.721-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4b3ad7ca is alive
-2025-08-27T14:44:32.382-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@23f4c519 is alive
-2025-08-27T14:44:36.271-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5dca8b1d is alive
-2025-08-27T14:44:37.458-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/categorias", parameters={}
-2025-08-27T14:44:37.458-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.biblioteca.controller.general.CategoriaController#crear(CategoriaDTO)
-2025-08-27T14:44:37.459-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CategoriaDTO(id=null, nombre=Este Prueba, estado=AA)]
-2025-08-27T14:44:37.462-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.biblioteca.controller.error.GlobalExceptionHandler#handleValidation(MethodArgumentNotValidException)
-2025-08-27T14:44:37.462-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-27T14:44:37.463-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiResponse(timestamp=2025-08-27T14:44:37.462595200, status=400, message=Error de validación, data={ (truncated)...]
-2025-08-27T14:44:37.464-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.biblioteca.dto.CategoriaDTO> com.example.biblioteca.controller.general.CategoriaController.crear(com.example.biblioteca.dto.CategoriaDTO): [Field error in object 'categoriaDTO' on field 'estado': rejected value [AA]; codes [Pattern.categoriaDTO.estado,Pattern.estado,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [categoriaDTO.estado,estado]; arguments []; default message [estado],[Ljakarta.validation.constraints.Pattern$Flag;@7143e12b,A|I]; default message [EL estado debe ser 'A' (Activo)o 'I' (Inactivo)]] ]
-2025-08-27T14:44:37.464-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
-2025-08-27T14:44:40.167-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@33153d0a is alive
-2025-08-27T14:44:41.105-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4483f9da is alive
-2025-08-27T14:44:47.828-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@3b565249 is alive
-2025-08-27T14:44:54.780-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:44:54.780-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:45:18.826-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5bb6b644 is alive
-2025-08-27T14:45:24.796-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:45:24.808-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:45:33.438-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@653580 is alive
-2025-08-27T14:45:49.766-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5994a893 is alive
-2025-08-27T14:45:54.811-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:45:54.811-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:45:56.254-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@18ee7117 is alive
-2025-08-27T14:46:17.689-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-9] o.s.web.servlet.DispatcherServlet        : PUT "/api/v1/categorias/90", parameters={}
-2025-08-27T14:46:17.690-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.biblioteca.controller.general.CategoriaController#actualizar(Long, CategoriaDTO)
-2025-08-27T14:46:17.693-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [CategoriaDTO(id=3, nombre=ererererere, estado=A)]
-2025-08-27T14:46:17.706-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-9] org.hibernate.SQL                        : 
+        USERLP2.tbl_secciones s1_0
+2025-09-03T14:14:38.028-05:00 DEBUG 8148 --- [biblioteca] [http-nio-9090-exec-1] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.estado,
@@ -246,19 +138,7 @@
         USERLP2.tbl_categorias c1_0 
     where
         c1_0.id=?
-2025-08-27T14:46:17.722-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.biblioteca.controller.error.GlobalExceptionHandler#handleNotFound(ResourceNotFoundException)
-2025-08-27T14:46:17.723-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-27T14:46:17.723-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiResponse(timestamp=2025-08-27T14:46:17.722578300, status=404, message=No se encontró la categoría (truncated)...]
-2025-08-27T14:46:17.723-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.biblioteca.controller.error.ResourceNotFoundException: No se encontró la categoría con id 90]
-2025-08-27T14:46:17.724-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2025-08-27T14:46:23.523-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4b3ad7ca is alive
-2025-08-27T14:46:24.815-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:46:24.815-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:46:26.810-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@23f4c519 is alive
-2025-08-27T14:46:31.491-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5dca8b1d is alive
-2025-08-27T14:46:35.037-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : DELETE "/api/v1/categorias/59", parameters={}
-2025-08-27T14:46:35.037-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.biblioteca.controller.general.CategoriaController#eliminar(Long)
-2025-08-27T14:46:35.041-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-1] org.hibernate.SQL                        : 
+2025-09-03T14:14:38.057-05:00 DEBUG 8148 --- [biblioteca] [http-nio-9090-exec-1] org.hibernate.SQL                        : 
     select
         c1_0.id,
         c1_0.estado,
@@ -267,105 +147,318 @@
         USERLP2.tbl_categorias c1_0 
     where
         c1_0.id=?
-2025-08-27T14:46:35.044-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.biblioteca.controller.error.GlobalExceptionHandler#handleNotFound(ResourceNotFoundException)
-2025-08-27T14:46:35.044-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
-2025-08-27T14:46:35.045-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ApiResponse(timestamp=2025-08-27T14:46:35.044368600, status=404, message=No existe categoría con id  (truncated)...]
-2025-08-27T14:46:35.046-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.example.biblioteca.controller.error.ResourceNotFoundException: No existe categoría con id 59]
-2025-08-27T14:46:35.046-05:00 DEBUG 17028 --- [biblioteca] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2025-08-27T14:46:36.454-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@33153d0a is alive
-2025-08-27T14:46:37.684-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4483f9da is alive
-2025-08-27T14:46:46.071-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@3b565249 is alive
-2025-08-27T14:46:54.821-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:46:54.821-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:46:59.488-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5bb6b644 is alive
-2025-08-27T14:47:17.091-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@653580 is alive
-2025-08-27T14:47:24.826-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:47:24.826-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:47:36.657-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5994a893 is alive
-2025-08-27T14:47:44.480-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@18ee7117 is alive
-2025-08-27T14:47:54.826-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:47:54.826-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:48:17.317-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4b3ad7ca is alive
-2025-08-27T14:48:21.224-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@23f4c519 is alive
-2025-08-27T14:48:24.828-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:48:24.828-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:48:26.716-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5dca8b1d is alive
-2025-08-27T14:48:32.741-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@33153d0a is alive
-2025-08-27T14:48:34.251-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4483f9da is alive
-2025-08-27T14:48:40.143-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5bb6b644 is alive
-2025-08-27T14:48:44.307-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@3b565249 is alive
-2025-08-27T14:48:54.831-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:48:54.831-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:49:00.731-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@653580 is alive
-2025-08-27T14:49:23.545-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5994a893 is alive
-2025-08-27T14:49:24.831-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:49:24.832-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:49:32.715-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@18ee7117 is alive
-2025-08-27T14:49:54.836-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:49:54.838-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:50:11.111-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4b3ad7ca is alive
-2025-08-27T14:50:15.641-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@23f4c519 is alive
-2025-08-27T14:50:20.809-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5bb6b644 is alive
-2025-08-27T14:50:21.922-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5dca8b1d is alive
-2025-08-27T14:50:24.846-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:50:24.846-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:50:29.029-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@33153d0a is alive
-2025-08-27T14:50:30.816-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4483f9da is alive
-2025-08-27T14:50:42.532-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@3b565249 is alive
-2025-08-27T14:50:44.373-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@653580 is alive
-2025-08-27T14:50:54.848-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:50:54.848-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:51:10.444-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5994a893 is alive
-2025-08-27T14:51:20.944-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@18ee7117 is alive
-2025-08-27T14:51:24.849-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:51:24.849-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:51:54.859-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:51:54.859-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:52:01.476-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5bb6b644 is alive
-2025-08-27T14:52:04.924-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4b3ad7ca is alive
-2025-08-27T14:52:10.053-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@23f4c519 is alive
-2025-08-27T14:52:17.131-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5dca8b1d is alive
-2025-08-27T14:52:24.861-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:52:24.861-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:52:25.325-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@33153d0a is alive
-2025-08-27T14:52:27.382-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4483f9da is alive
-2025-08-27T14:52:28.012-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@653580 is alive
-2025-08-27T14:52:40.759-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@3b565249 is alive
-2025-08-27T14:52:54.863-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:52:54.863-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:52:57.341-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5994a893 is alive
-2025-08-27T14:53:09.180-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@18ee7117 is alive
-2025-08-27T14:53:24.864-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:53:24.864-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:53:42.129-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5bb6b644 is alive
-2025-08-27T14:53:54.864-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:53:54.864-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:53:58.718-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4b3ad7ca is alive
-2025-08-27T14:54:04.473-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@23f4c519 is alive
-2025-08-27T14:54:11.658-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@653580 is alive
-2025-08-27T14:54:12.339-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5dca8b1d is alive
-2025-08-27T14:54:21.625-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@33153d0a is alive
-2025-08-27T14:54:23.962-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4483f9da is alive
-2025-08-27T14:54:24.868-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:54:24.868-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:54:38.991-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@3b565249 is alive
-2025-08-27T14:54:44.240-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5994a893 is alive
-2025-08-27T14:54:54.878-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:54:54.878-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:54:57.408-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@18ee7117 is alive
-2025-08-27T14:55:22.795-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5bb6b644 is alive
-2025-08-27T14:55:24.880-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:55:24.880-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:55:52.515-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4b3ad7ca is alive
-2025-08-27T14:55:54.882-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:55:54.882-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:55:55.299-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@653580 is alive
-2025-08-27T14:55:58.884-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@23f4c519 is alive
-2025-08-27T14:56:07.546-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5dca8b1d is alive
-2025-08-27T14:56:17.919-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@33153d0a is alive
-2025-08-27T14:56:20.528-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4483f9da is alive
-2025-08-27T14:56:24.883-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
-2025-08-27T14:56:24.883-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
-2025-08-27T14:56:31.128-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5994a893 is alive
-2025-08-27T14:56:37.219-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@3b565249 is alive
-2025-08-27T14:56:45.645-05:00 DEBUG 17028 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@18ee7117 is alive
+2025-09-03T14:14:38.059-05:00 DEBUG 8148 --- [biblioteca] [http-nio-9090-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.estado,
+        c1_0.nombre 
+    from
+        USERLP2.tbl_categorias c1_0 
+    where
+        c1_0.id=?
+2025-09-03T14:14:38.061-05:00 DEBUG 8148 --- [biblioteca] [http-nio-9090-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.estado,
+        c1_0.nombre 
+    from
+        USERLP2.tbl_categorias c1_0 
+    where
+        c1_0.id=?
+2025-09-03T14:14:38.100-05:00 DEBUG 8148 --- [biblioteca] [http-nio-9090-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-09-03T14:14:38.102-05:00 DEBUG 8148 --- [biblioteca] [http-nio-9090-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[SeccionDTO(id=1, nombre=NOVELA CONTEMPORÁNEA, estado=A, categoriaId=1), SeccionDTO(id=2, nombre=HIS (truncated)...]
+2025-09-03T14:14:38.159-05:00 DEBUG 8148 --- [biblioteca] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-09-03T14:15:00.273-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:15:00.275-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:15:30.275-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:15:30.276-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:16:00.291-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:16:00.293-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:16:08.292-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4751cd3 is alive
+2025-09-03T14:16:09.305-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6ab6f0a2 is alive
+2025-09-03T14:16:11.990-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6e492e16 is alive
+2025-09-03T14:16:12.099-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@ba8b2df is alive
+2025-09-03T14:16:13.367-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@2727ec27 is alive
+2025-09-03T14:16:17.181-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@38f8b5a8 is alive
+2025-09-03T14:16:19.550-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@27e3a9d3 is alive
+2025-09-03T14:16:24.303-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@52a23e44 is alive
+2025-09-03T14:16:24.616-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6954becc is alive
+2025-09-03T14:16:28.533-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5697da04 is alive
+2025-09-03T14:16:30.298-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:16:30.298-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:17:00.308-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:17:00.308-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:17:30.317-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:17:30.317-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:17:46.430-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4751cd3 is alive
+2025-09-03T14:17:48.170-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6ab6f0a2 is alive
+2025-09-03T14:17:53.457-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6e492e16 is alive
+2025-09-03T14:17:53.566-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@ba8b2df is alive
+2025-09-03T14:17:55.580-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@2727ec27 is alive
+2025-09-03T14:18:00.326-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:18:00.326-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:18:04.047-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@38f8b5a8 is alive
+2025-09-03T14:18:08.361-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@27e3a9d3 is alive
+2025-09-03T14:18:17.555-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@52a23e44 is alive
+2025-09-03T14:18:18.388-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6954becc is alive
+2025-09-03T14:18:26.114-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5697da04 is alive
+2025-09-03T14:18:30.335-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:18:30.335-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:19:00.336-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:19:00.336-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:19:24.560-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4751cd3 is alive
+2025-09-03T14:19:27.055-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6ab6f0a2 is alive
+2025-09-03T14:19:30.337-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:19:30.337-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:19:34.909-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6e492e16 is alive
+2025-09-03T14:19:35.033-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@ba8b2df is alive
+2025-09-03T14:19:37.785-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@2727ec27 is alive
+2025-09-03T14:19:50.901-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@38f8b5a8 is alive
+2025-09-03T14:19:57.168-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@27e3a9d3 is alive
+2025-09-03T14:20:00.339-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:20:00.339-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:20:10.806-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@52a23e44 is alive
+2025-09-03T14:20:12.155-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6954becc is alive
+2025-09-03T14:20:23.687-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5697da04 is alive
+2025-09-03T14:20:30.341-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:20:30.341-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:21:00.344-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:21:00.344-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:21:02.689-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4751cd3 is alive
+2025-09-03T14:21:05.918-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6ab6f0a2 is alive
+2025-09-03T14:21:16.363-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6e492e16 is alive
+2025-09-03T14:21:16.494-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@ba8b2df is alive
+2025-09-03T14:21:19.988-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@2727ec27 is alive
+2025-09-03T14:21:30.345-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:21:30.345-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:21:37.765-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@38f8b5a8 is alive
+2025-09-03T14:21:45.978-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@27e3a9d3 is alive
+2025-09-03T14:22:00.346-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:22:00.346-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:22:04.053-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@52a23e44 is alive
+2025-09-03T14:22:05.935-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6954becc is alive
+2025-09-03T14:22:21.261-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5697da04 is alive
+2025-09-03T14:22:30.348-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:22:30.348-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:22:40.819-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4751cd3 is alive
+2025-09-03T14:22:44.782-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6ab6f0a2 is alive
+2025-09-03T14:22:57.814-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6e492e16 is alive
+2025-09-03T14:22:57.956-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@ba8b2df is alive
+2025-09-03T14:23:00.350-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:23:00.350-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:23:02.190-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@2727ec27 is alive
+2025-09-03T14:23:24.633-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@38f8b5a8 is alive
+2025-09-03T14:23:30.358-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:23:30.358-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:23:34.785-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@27e3a9d3 is alive
+2025-09-03T14:23:57.300-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@52a23e44 is alive
+2025-09-03T14:23:59.701-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6954becc is alive
+2025-09-03T14:24:00.365-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:24:00.365-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:24:18.839-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5697da04 is alive
+2025-09-03T14:24:18.947-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4751cd3 is alive
+2025-09-03T14:24:23.644-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6ab6f0a2 is alive
+2025-09-03T14:24:30.366-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:24:30.366-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:24:39.266-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6e492e16 is alive
+2025-09-03T14:24:39.417-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@ba8b2df is alive
+2025-09-03T14:24:44.392-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@2727ec27 is alive
+2025-09-03T14:25:00.367-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:25:00.367-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:25:11.488-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@38f8b5a8 is alive
+2025-09-03T14:25:23.591-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@27e3a9d3 is alive
+2025-09-03T14:25:30.369-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:25:30.369-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:25:50.545-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@52a23e44 is alive
+2025-09-03T14:25:53.481-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6954becc is alive
+2025-09-03T14:25:57.080-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4751cd3 is alive
+2025-09-03T14:26:00.382-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:26:00.382-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:26:02.513-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6ab6f0a2 is alive
+2025-09-03T14:26:16.418-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5697da04 is alive
+2025-09-03T14:26:20.722-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6e492e16 is alive
+2025-09-03T14:26:20.878-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@ba8b2df is alive
+2025-09-03T14:26:26.593-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@2727ec27 is alive
+2025-09-03T14:26:30.391-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:26:30.391-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:26:58.348-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@38f8b5a8 is alive
+2025-09-03T14:27:00.392-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:27:00.392-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:27:12.399-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@27e3a9d3 is alive
+2025-09-03T14:27:30.402-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:27:30.402-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:27:35.220-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4751cd3 is alive
+2025-09-03T14:27:41.382-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6ab6f0a2 is alive
+2025-09-03T14:27:43.794-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@52a23e44 is alive
+2025-09-03T14:27:47.262-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6954becc is alive
+2025-09-03T14:28:00.416-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:28:00.416-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:28:02.182-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6e492e16 is alive
+2025-09-03T14:28:02.339-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@ba8b2df is alive
+2025-09-03T14:28:08.804-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@2727ec27 is alive
+2025-09-03T14:28:13.998-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5697da04 is alive
+2025-09-03T14:28:30.421-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:28:30.421-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:28:45.212-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@38f8b5a8 is alive
+2025-09-03T14:29:00.427-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:29:00.427-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:29:01.207-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@27e3a9d3 is alive
+2025-09-03T14:29:13.364-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4751cd3 is alive
+2025-09-03T14:29:20.254-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6ab6f0a2 is alive
+2025-09-03T14:29:30.438-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:29:30.438-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:29:37.051-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@52a23e44 is alive
+2025-09-03T14:29:41.040-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6954becc is alive
+2025-09-03T14:29:43.639-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6e492e16 is alive
+2025-09-03T14:29:43.810-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@ba8b2df is alive
+2025-09-03T14:29:51.016-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@2727ec27 is alive
+2025-09-03T14:30:00.443-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:30:00.443-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:30:11.575-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5697da04 is alive
+2025-09-03T14:30:30.452-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:30:30.452-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:30:32.067-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@38f8b5a8 is alive
+2025-09-03T14:30:50.022-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@27e3a9d3 is alive
+2025-09-03T14:30:51.494-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4751cd3 is alive
+2025-09-03T14:30:59.119-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6ab6f0a2 is alive
+2025-09-03T14:31:00.461-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:31:00.461-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:31:25.091-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6e492e16 is alive
+2025-09-03T14:31:25.279-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@ba8b2df is alive
+2025-09-03T14:31:30.303-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@52a23e44 is alive
+2025-09-03T14:31:30.472-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:31:30.472-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:31:33.219-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@2727ec27 is alive
+2025-09-03T14:31:34.818-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6954becc is alive
+2025-09-03T14:32:00.478-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:32:00.478-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:32:09.163-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5697da04 is alive
+2025-09-03T14:32:18.936-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@38f8b5a8 is alive
+2025-09-03T14:32:29.634-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4751cd3 is alive
+2025-09-03T14:32:30.481-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:32:30.481-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:32:37.993-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6ab6f0a2 is alive
+2025-09-03T14:32:38.835-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@27e3a9d3 is alive
+2025-09-03T14:33:00.489-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:33:00.489-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:33:06.557-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6e492e16 is alive
+2025-09-03T14:33:06.745-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@ba8b2df is alive
+2025-09-03T14:33:15.431-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@2727ec27 is alive
+2025-09-03T14:33:23.553-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@52a23e44 is alive
+2025-09-03T14:33:28.595-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6954becc is alive
+2025-09-03T14:33:30.497-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:33:30.497-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:34:00.511-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:34:00.511-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:34:05.802-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@38f8b5a8 is alive
+2025-09-03T14:34:06.742-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5697da04 is alive
+2025-09-03T14:34:07.777-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4751cd3 is alive
+2025-09-03T14:34:16.865-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6ab6f0a2 is alive
+2025-09-03T14:34:27.653-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@27e3a9d3 is alive
+2025-09-03T14:34:30.518-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:34:30.518-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:34:48.015-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6e492e16 is alive
+2025-09-03T14:34:48.219-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@ba8b2df is alive
+2025-09-03T14:34:57.641-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@2727ec27 is alive
+2025-09-03T14:35:00.532-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:35:00.532-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:35:16.802-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@52a23e44 is alive
+2025-09-03T14:35:22.365-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6954becc is alive
+2025-09-03T14:35:30.534-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:35:30.534-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:35:45.908-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4751cd3 is alive
+2025-09-03T14:35:52.659-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@38f8b5a8 is alive
+2025-09-03T14:35:55.731-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6ab6f0a2 is alive
+2025-09-03T14:36:00.538-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:36:00.538-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:36:04.317-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5697da04 is alive
+2025-09-03T14:36:16.461-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@27e3a9d3 is alive
+2025-09-03T14:36:29.465-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6e492e16 is alive
+2025-09-03T14:36:29.687-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@ba8b2df is alive
+2025-09-03T14:36:30.549-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:36:30.549-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:36:39.852-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@2727ec27 is alive
+2025-09-03T14:37:00.550-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:37:00.550-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:37:10.060-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@52a23e44 is alive
+2025-09-03T14:37:16.142-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6954becc is alive
+2025-09-03T14:37:24.051-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4751cd3 is alive
+2025-09-03T14:37:30.551-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:37:30.551-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:37:30.802-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@27e3a9d3: (connection has passed maxLifetime)
+2025-09-03T14:37:30.805-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (6a94a346-eab1-4960-be11-eef4532e1c8a)
+2025-09-03T14:37:30.895-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (6a94a346-eab1-4960-be11-eef4532e1c8a)
+2025-09-03T14:37:30.895-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@723f5248
+2025-09-03T14:37:34.592-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6ab6f0a2 is alive
+2025-09-03T14:37:39.528-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@38f8b5a8 is alive
+2025-09-03T14:38:00.552-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:38:00.552-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:38:01.895-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5697da04 is alive
+2025-09-03T14:38:10.918-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6e492e16 is alive
+2025-09-03T14:38:11.148-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@ba8b2df is alive
+2025-09-03T14:38:22.055-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@2727ec27 is alive
+2025-09-03T14:38:30.564-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:38:30.564-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:39:00.569-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:39:00.569-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:39:02.193-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4751cd3 is alive
+2025-09-03T14:39:03.319-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@52a23e44 is alive
+2025-09-03T14:39:09.867-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@723f5248 is alive
+2025-09-03T14:39:09.922-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6954becc is alive
+2025-09-03T14:39:13.457-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6ab6f0a2 is alive
+2025-09-03T14:39:26.381-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@38f8b5a8 is alive
+2025-09-03T14:39:30.571-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:39:30.571-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:39:52.370-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6e492e16 is alive
+2025-09-03T14:39:52.608-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@ba8b2df is alive
+2025-09-03T14:39:59.469-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5697da04 is alive
+2025-09-03T14:40:00.573-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:40:00.573-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:40:04.256-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@2727ec27 is alive
+2025-09-03T14:40:30.574-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:40:30.574-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:40:40.322-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@4751cd3 is alive
+2025-09-03T14:40:48.839-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@723f5248 is alive
+2025-09-03T14:40:52.322-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6ab6f0a2 is alive
+2025-09-03T14:40:56.566-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@52a23e44 is alive
+2025-09-03T14:41:00.576-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:41:00.576-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:41:03.689-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6954becc is alive
+2025-09-03T14:41:13.236-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@38f8b5a8 is alive
+2025-09-03T14:41:14.220-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@6954becc: (connection has passed maxLifetime)
+2025-09-03T14:41:14.224-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (1e8a5f54-e2e0-4624-8ea0-ea1b598ae866)
+2025-09-03T14:41:14.330-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (1e8a5f54-e2e0-4624-8ea0-ea1b598ae866)
+2025-09-03T14:41:14.330-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@2fb881fe
+2025-09-03T14:41:30.576-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:41:30.577-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:41:33.822-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@6e492e16 is alive
+2025-09-03T14:41:34.069-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@ba8b2df is alive
+2025-09-03T14:41:38.977-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@38f8b5a8: (connection has passed maxLifetime)
+2025-09-03T14:41:38.979-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (2b6d6b9d-129e-481a-bbd4-8a3b6f2c8507)
+2025-09-03T14:41:39.033-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (2b6d6b9d-129e-481a-bbd4-8a3b6f2c8507)
+2025-09-03T14:41:39.034-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@1dc4b9aa
+2025-09-03T14:41:46.458-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@2727ec27 is alive
+2025-09-03T14:41:57.042-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - keepalive: connection oracle.jdbc.driver.T4CConnection@5697da04 is alive
+2025-09-03T14:42:00.590-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:42:00.590-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-03T14:42:03.412-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@2727ec27: (connection has passed maxLifetime)
+2025-09-03T14:42:03.414-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Attempting to create/setup new connection (b6e0d45a-6381-4f95-83da-92cc17c7e3f9)
+2025-09-03T14:42:03.467-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Established new connection (b6e0d45a-6381-4f95-83da-92cc17c7e3f9)
+2025-09-03T14:42:03.467-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-adder] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7434848
+2025-09-03T14:42:13.631-05:00  INFO 8148 --- [biblioteca] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-03T14:42:13.636-05:00  INFO 8148 --- [biblioteca] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-03T14:42:13.643-05:00  INFO 8148 --- [biblioteca] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-03T14:42:13.647-05:00  INFO 8148 --- [biblioteca] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-03T14:42:13.648-05:00 DEBUG 8148 --- [biblioteca] [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Before shutdown stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-03T14:42:13.649-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@4751cd3: (connection evicted)
+2025-09-03T14:42:13.651-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@6ab6f0a2: (connection evicted)
+2025-09-03T14:42:13.652-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@6e492e16: (connection evicted)
+2025-09-03T14:42:13.656-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@ba8b2df: (connection evicted)
+2025-09-03T14:42:13.661-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@5697da04: (connection evicted)
+2025-09-03T14:42:13.664-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@52a23e44: (connection evicted)
+2025-09-03T14:42:13.668-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@723f5248: (connection evicted)
+2025-09-03T14:42:13.669-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@2fb881fe: (connection evicted)
+2025-09-03T14:42:13.670-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@1dc4b9aa: (connection evicted)
+2025-09-03T14:42:13.676-05:00 DEBUG 8148 --- [biblioteca] [HikariPool-1:connection-closer] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Closing connection oracle.jdbc.driver.T4CConnection@7434848: (connection evicted)
+2025-09-03T14:42:13.677-05:00 DEBUG 8148 --- [biblioteca] [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - After  shutdown stats (total=0/10, idle=0/10, active=0, waiting=0)
+2025-09-03T14:42:13.677-05:00  INFO 8148 --- [biblioteca] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

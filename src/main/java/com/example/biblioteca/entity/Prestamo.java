@@ -9,7 +9,6 @@ import java.util.Date;
 import java.util.Set;
 
 @EqualsAndHashCode(callSuper=false)
-@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Setter
@@ -20,7 +19,6 @@ public class Prestamo {
     @Id
     @Column(name = "ID")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Builder.Default
     private Long id=0L;
 
     @Column(name = "FECHA_PRESTAMO")
